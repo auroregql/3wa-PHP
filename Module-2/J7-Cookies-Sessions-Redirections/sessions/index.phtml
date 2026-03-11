@@ -1,0 +1,25 @@
+<?php
+
+session_start();
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sessions</title>
+</head>
+<body>
+    <form method="post" action="nickname.php">
+        <label for="nickname">
+            Nickname
+        </label>
+        <input type="nickname" id="nickname" name="nickname" />
+    
+        <button type="submit">Valider</button>
+    </form>
+    
+    <a href="logout.php">Déconnexion</a>
+</body>
+</html>

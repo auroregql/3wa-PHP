@@ -1,0 +1,26 @@
+<?php
+
+session_start();
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue</title>
+</head>
+<body>
+    <?php
+
+    if (isset($_SESSION['nickname'])) {
+        echo "Bienvenue " . $_SESSION['nickname'];
+    }
+    else {
+        echo "Bienvenue invité";
+    }
+    
+    ?>
+</body>
+</html>
+
