@@ -1,0 +1,174 @@
+---------------------------------------------------
+                     SELECT
+---------------------------------------------------
+
+
+--------------------EXERCICE 1--------------------
+
+SELECT * FROM users
+
+
+id	username	email	job	
+1	Superman	clark.kent@daily-planet.com	1	
+2	Wonder Woman	diana.prince@museum.uk	2	
+3	Captain America	steve.rogers@avengers.com	4	
+4	Supergirl	kara.denvers@catco.com	1	
+5	Iron Man	tony@stark.com	3	
+6	Batman	bruce@wayne.com	3	
+
+--------------------EXERCICE 2--------------------
+
+SELECT * FROM users WHERE id = 3
+
+
+
+3	Captain America	steve.rogers@avengers.com	4	
+
+--------------------EXERCICE 3--------------------
+
+SELECT username FROM users WHERE id = 2
+
+
+
+Wonder Woman	
+
+--------------------EXERCICE 4--------------------
+
+SELECT * FROM users ORDER BY id DESC
+
+
+id   	username	email	job	
+6	Batman	bruce@wayne.com	3	
+5	Iron Man	tony@stark.com	3	
+4	Supergirl	kara.denvers@catco.com	1	
+3	Captain America	steve.rogers@avengers.com	4	
+2	Wonder Woman	diana.prince@museum.uk	2	
+1	Superman	clark.kent@daily-planet.com	1	
+
+--------------------EXERCICE 5--------------------
+
+SELECT * FROM users ORDER BY id DESC LIMIT 3
+
+
+id   	username	email	job	
+6	Batman	bruce@wayne.com	3	
+5	Iron Man	tony@stark.com	3	
+4	Supergirl	kara.denvers@catco.com	1	
+
+
+---------------------------------------------------
+                     INSERT
+---------------------------------------------------
+
+
+--------------------EXERCICE 1--------------------
+
+INSERT INTO users (username, email, job)
+VALUES ("Spiderman", "peter.parker@daily-bugle.com", "1")
+
+
+id   	username	email	job	
+1	Superman	clark.kent@daily-planet.com	1	
+2	Wonder Woman	diana.prince@museum.uk	2	
+3	Captain America	steve.rogers@avengers.com	4	
+4	Supergirl	kara.denvers@catco.com	1	
+5	Iron Man	tony@stark.com	3	
+6	Batman	bruce@wayne.com	3	
+7	Spiderman	peter.parker@daily-bugle.com	1	
+
+
+--------------------EXERCICE 2--------------------
+
+INSERT INTO jobs (name)
+VALUES ("Lycéen")
+
+
+id   	name	
+1	Journaliste	
+2	Conservatrice de musée	
+3	Riche	
+4	Vétéran	
+5	Lycéen	
+
+
+---------------------------------------------------
+                     UPDATE
+---------------------------------------------------
+
+UPDATE users 
+SET job = "5"
+WHERE users.id = 7
+
+
+id   	username	email	job	
+1	Superman	clark.kent@daily-planet.com	1	
+2	Wonder Woman	diana.prince@museum.uk	2	
+3	Captain America	steve.rogers@avengers.com	4	
+4	Supergirl	kara.denvers@catco.com	1	
+5	Iron Man	tony@stark.com	3	
+6	Batman	bruce@wayne.com	3	
+7	Spiderman	peter.parker@daily-bugle.com	5	
+
+
+
+---------------------------------------------------
+                     DELETE
+---------------------------------------------------
+
+DELETE FROM users
+WHERE users.id = 6
+
+
+id   	username	email	job	
+1	Superman	clark.kent@daily-planet.com	1	
+2	Wonder Woman	diana.prince@museum.uk	2	
+3	Captain America	steve.rogers@avengers.com	4	
+4	Supergirl	kara.denvers@catco.com	1	
+5	Iron Man	tony@stark.com	3	
+7	Spiderman	peter.parker@daily-bugle.com	5	
+
+
+---------------------------------------------------
+                     JOIN
+---------------------------------------------------
+
+--------------------EXERCICE 1--------------------
+
+
+SELECT users.email, jobs.name
+FROM users JOIN jobs
+ON users.job = jobs.id
+WHERE jobs.id = 5
+
+
+
+peter.parker@daily-bugle.com	Lycéen	
+
+--------------------EXERCICE 2--------------------
+
+SELECT users.*, jobs.name
+FROM users JOIN jobs
+ON users.job = jobs.id
+
+
+id	username	email	job	name	
+1	Superman	clark.kent@daily-planet.com	1	Journaliste	
+2	Wonder Woman	diana.prince@museum.uk	2	Conservatrice de musée	
+3	Captain America	steve.rogers@avengers.com	4	Vétéran	
+4	Supergirl	kara.denvers@catco.com	1	Journaliste	
+5	Iron Man	tony@stark.com	3	Riche	
+7	Spiderman	peter.parker@daily-bugle.com	5	Lycéen	
+
+
+--------------------EXERCICE 3--------------------
+
+
+SELECT users.email, jobs.name
+FROM users JOIN jobs
+ON users.job = jobs.id
+WHERE jobs.id = 1
+
+
+email	name	
+clark.kent@daily-planet.com	Journaliste	
+kara.denvers@catco.com	Journaliste	

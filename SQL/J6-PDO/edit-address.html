@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>etape 7</title>
+</head>
+<body>
+    <header>
+        <h1>Etape 7 : Modifier une adresse</h1>
+    </header>
+    <main>
+        <form method="post" action="edit-address.php">
+                <fieldset>
+                    <label for="id">ID</label>
+                    <input type="number" id="id" name="id" required />
+                </fieldset>
+                <fieldset>
+                    <label for="street">
+                        Street
+                    </label>
+                    <input type="street" id="street" name="street" />
+                </fieldset>
+                <fieldset>
+                    <label for="city">
+                        City
+                    </label>
+                    <input type="city" id="city" name="city" />
+                </fieldset>
+                <fieldset>
+                    <label for="zipcode">
+                        Zipcode
+                    </label>
+                        <input type="zipcode" id="zipcode" name="zipcode" />
+                </fieldset>
+               
+                <fieldset>
+                    <button type="submit">Envoyer</button>
+                </fieldset>
+        </form>
+    </main>
+</body>
+</html>

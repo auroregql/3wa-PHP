@@ -1,0 +1,445 @@
+---------------- ETAPE 1 ------------------
+
+SELECT * FROM users
+
+
+id	address_id	email	password	first_name	last_name	registration_date	birthdate	
+cd5272cb-5a62-11eb-bc37-0242c0a8e002	eb316afe-5a62-11eb-bc37-0242c0a8e002	xgoncalves@example.org	$argon2id$v=19$m=65536,t=4,p=1$l3lmgk7pqNnR8o1W3xl...	Caroline	Levy	2016-01-06 19:56:14	1944-08-14 04:43:38	
+cd6d6f97-5a62-11eb-bc37-0242c0a8e002	eb31e94b-5a62-11eb-bc37-0242c0a8e002	merle.andree@example.org	$argon2id$v=19$m=65536,t=4,p=1$phQ9OnraLEkYsw3JnUk...	Charles	Laporte	2020-05-28 16:06:07	1987-09-24 20:24:23	
+cd899d00-5a62-11eb-bc37-0242c0a8e002	eb327ca7-5a62-11eb-bc37-0242c0a8e002	dominique46@example.com	$argon2id$v=19$m=65536,t=4,p=1$KkXb5AyVzEhaNamXQg+...	Renée	Pascal	2013-08-15 23:36:48	1943-04-07 17:00:19	
+cda719ee-5a62-11eb-bc37-0242c0a8e002	eb331e14-5a62-11eb-bc37-0242c0a8e002	lucas.lejeune@example.com	$argon2id$v=19$m=65536,t=4,p=1$29OcwmicYQiB/0T5rPT...	Christine	Jourdan	2016-04-21 17:07:08	1987-03-31 05:24:35	
+cdc18aaa-5a62-11eb-bc37-0242c0a8e002	eb33b1a2-5a62-11eb-bc37-0242c0a8e002	dumont.margaud@example.com	$argon2id$v=19$m=65536,t=4,p=1$EjkHxnbzsWyNeR7aWXj...	Alix	Gilles	2012-02-20 20:03:47	1967-09-13 04:25:31	
+cddc9fa2-5a62-11eb-bc37-0242c0a8e002	eb3445c3-5a62-11eb-bc37-0242c0a8e002	zmarques@example.com	$argon2id$v=19$m=65536,t=4,p=1$yDNm+YH1P91EJY7MJga...	Henri	Garcia	2019-09-26 16:33:44	1973-05-12 00:40:48	
+cdf79b63-5a62-11eb-bc37-0242c0a8e002	eb34aff7-5a62-11eb-bc37-0242c0a8e002	susan04@example.org	$argon2id$v=19$m=65536,t=4,p=1$O7JB96rQZC3I2wsVQ/q...	Michelle	Monnier	2015-03-06 04:10:37	1958-01-29 02:42:09	
+ce120f9b-5a62-11eb-bc37-0242c0a8e002	eb3502cc-5a62-11eb-bc37-0242c0a8e002	capucine98@example.org	$argon2id$v=19$m=65536,t=4,p=1$2XEdiRMYUubMjv0Dyb9...	Geneviève	Dos Santos	2016-12-14 20:34:32	1953-12-02 10:08:37	
+ce2c5494-5a62-11eb-bc37-0242c0a8e002	ebbcc599-5a62-11eb-bc37-0242c0a8e002	emmanuelle74@example.org	$argon2id$v=19$m=65536,t=4,p=1$rmQ1NNJ9QK0+CAej1i/...	Thibaut	Delattre	2020-07-17 10:20:33	1944-04-17 18:51:21	
+ce48442e-5a62-11eb-bc37-0242c0a8e002	ebbd4146-5a62-11eb-bc37-0242c0a8e002	william.launay@example.net	$argon2id$v=19$m=65536,t=4,p=1$V6BIKLmaR85TckBtkG/...	Christelle	Joly	2019-09-27 00:44:16	1959-07-27 14:34:22	
+ce637c47-5a62-11eb-bc37-0242c0a8e002	ebbdd3f5-5a62-11eb-bc37-0242c0a8e002	guillaume.berger@example.net	$argon2id$v=19$m=65536,t=4,p=1$fLsSUhcqHfqmzd2+8Qt...	Arthur	Albert	2020-02-22 17:36:37	1958-06-03 22:26:54	
+ce7edfbb-5a62-11eb-bc37-0242c0a8e002	ebbe5043-5a62-11eb-bc37-0242c0a8e002	louis68@example.net	$argon2id$v=19$m=65536,t=4,p=1$jU5C127rRhyhFp4MMke...	Valérie	Pottier	2012-09-14 20:42:55	1985-12-05 08:14:38	
+ce990022-5a62-11eb-bc37-0242c0a8e002	ebbecd47-5a62-11eb-bc37-0242c0a8e002	monique.schmitt@example.org	$argon2id$v=19$m=65536,t=4,p=1$OJTZLX0MSItWnU4w3VH...	Laurent	Leroux	2018-03-25 16:36:14	1959-10-21 10:48:16	
+ceb64ead-5a62-11eb-bc37-0242c0a8e002	ebbf45bd-5a62-11eb-bc37-0242c0a8e002	leleu.madeleine@example.com	$argon2id$v=19$m=65536,t=4,p=1$qAfIjBxXsFf97WBYORq...	Yves	Fernandes	2017-01-17 22:01:45	1993-05-17 09:26:36	
+ced4cd09-5a62-11eb-bc37-0242c0a8e002	ebc13034-5a62-11eb-bc37-0242c0a8e002	yves.hamel@example.com	$argon2id$v=19$m=65536,t=4,p=1$eN+4daPVVP7lE0/I8IT...	Anne	Descamps	2018-11-14 18:37:03	1937-06-27 22:44:01	
+cef1287b-5a62-11eb-bc37-0242c0a8e002	ebc1a2f2-5a62-11eb-bc37-0242c0a8e002	wmarechal@example.com	$argon2id$v=19$m=65536,t=4,p=1$jcwgPAYNq7fHe5BDSy0...	Véronique	Denis	2020-12-01 19:05:04	1934-02-16 11:14:13	
+cf12ce8f-5a62-11eb-bc37-0242c0a8e002	ebc2082f-5a62-11eb-bc37-0242c0a8e002	philippine36@example.com	$argon2id$v=19$m=65536,t=4,p=1$FRzmXUTRFcgktbdn+Ua...	Christelle	Fernandes	2018-03-16 09:38:23	1989-11-27 14:22:54	
+cf349228-5a62-11eb-bc37-0242c0a8e002	ebc34981-5a62-11eb-bc37-0242c0a8e002	cmary@example.org	$argon2id$v=19$m=65536,t=4,p=1$XN1VjINFL8QmRhf5tA7...	Matthieu	Louis	2013-07-03 12:59:54	1993-10-22 16:22:50	
+cf52bc14-5a62-11eb-bc37-0242c0a8e002	ebc3a823-5a62-11eb-bc37-0242c0a8e002	hlebon@example.org	$argon2id$v=19$m=65536,t=4,p=1$WdjKPwqdvlzLtID4ex2...	Clémence	Lemaitre	2016-08-24 22:37:37	1974-01-24 22:07:27	
+cf785706-5a62-11eb-bc37-0242c0a8e002	ebc3fda3-5a62-11eb-bc37-0242c0a8e002	penelope.salmon@example.net	$argon2id$v=19$m=65536,t=4,p=1$USDDaqVFdfTchg05lo0...	Dominique	Chevallier	2016-10-19 17:33:47	1966-11-24 05:25:43	
+cf9b2503-5a62-11eb-bc37-0242c0a8e002	ebc46225-5a62-11eb-bc37-0242c0a8e002	chauvin.christiane@example.net	$argon2id$v=19$m=65536,t=4,p=1$bnkeOe6qGLBzJpxQBG8...	Joseph	Roussel	2011-01-31 02:26:31	1948-08-18 17:18:03	
+cfc0c883-5a62-11eb-bc37-0242c0a8e002	ebc4e459-5a62-11eb-bc37-0242c0a8e002	maurice.christine@example.net	$argon2id$v=19$m=65536,t=4,p=1$rryFhugpn6Nf8P3juBX...	Margot	Mary	2011-12-26 20:58:11	1936-06-22 22:40:21	
+cfe8aa6a-5a62-11eb-bc37-0242c0a8e002	ebc571ba-5a62-11eb-bc37-0242c0a8e002	anne.lefort@example.net	$argon2id$v=19$m=65536,t=4,p=1$A04dIXVKXBm/1UFVwlm...	Patricia	Berthelot	2017-10-25 04:59:27	1937-02-07 18:36:14	
+d010f8ef-5a62-11eb-bc37-0242c0a8e002	ebc7303b-5a62-11eb-bc37-0242c0a8e002	uboyer@example.org	$argon2id$v=19$m=65536,t=4,p=1$0ERX4uCzOugQ1gq4Iv0...	Anne	Le Goff	2012-01-22 22:37:17	1977-05-30 22:09:11	
+d038de58-5a62-11eb-bc37-0242c0a8e002	ebc79a39-5a62-11eb-bc37-0242c0a8e002	garcia.thierry@example.net	$argon2id$v=19$m=65536,t=4,p=1$3RK6e2Q8g2a3vM3FI8d...	Marine	Lemaire	2014-01-30 18:20:15	1999-02-14 03:59:15	
+
+
+---------------- ETAPE 2 ------------------
+
+SELECT * FROM users ORDER BY last_name ASC
+
+
+id	address_id	email	password	first_name	last_name   	registration_date	birthdate	
+ce637c47-5a62-11eb-bc37-0242c0a8e002	ebbdd3f5-5a62-11eb-bc37-0242c0a8e002	guillaume.berger@example.net	$argon2id$v=19$m=65536,t=4,p=1$fLsSUhcqHfqmzd2+8Qt...	Arthur	Albert	2020-02-22 17:36:37	1958-06-03 22:26:54	
+d6dcbde8-5a62-11eb-bc37-0242c0a8e002	ebe57fbd-5a62-11eb-bc37-0242c0a8e002	mendes.aime@example.com	$argon2id$v=19$m=65536,t=4,p=1$LP9tCrm+TW6T+zvIQAj...	Lorraine	Albert	2016-03-08 06:15:32	1951-04-10 00:06:34	
+e7e7ade2-5a62-11eb-bc37-0242c0a8e002	ec222c3f-5a62-11eb-bc37-0242c0a8e002	margaux28@example.com	$argon2id$v=19$m=65536,t=4,p=1$+yaynz/b/agqY4xEzo6...	Paul	Alves	2019-01-14 09:21:20	1967-06-20 10:57:36	
+d16b1734-5a62-11eb-bc37-0242c0a8e002	ebcb9ef8-5a62-11eb-bc37-0242c0a8e002	mschneider@example.net	$argon2id$v=19$m=65536,t=4,p=1$On1L1pGhkzKbXdkpjqW...	Capucine	Andre	2011-09-08 10:42:55	1961-02-03 21:20:38	
+e44498fb-5a62-11eb-bc37-0242c0a8e002	ec12131e-5a62-11eb-bc37-0242c0a8e002	ndelaunay@example.net	$argon2id$v=19$m=65536,t=4,p=1$Fl0x2BrP78bQqkpHe6+...	Frédérique	Andre	2020-04-16 03:05:07	1935-03-27 09:33:15	
+d2e19934-5a62-11eb-bc37-0242c0a8e002	ebd3bab8-5a62-11eb-bc37-0242c0a8e002	andre.legall@example.org	$argon2id$v=19$m=65536,t=4,p=1$fSPewJAx6fLdKCcM/XJ...	Andrée	Aubert	2016-08-26 11:35:26	1937-03-21 01:53:03	
+e4e99081-5a62-11eb-bc37-0242c0a8e002	ec148359-5a62-11eb-bc37-0242c0a8e002	suzanne.fouquet@example.com	$argon2id$v=19$m=65536,t=4,p=1$yNYUhBqIyy2c16Ql8Re...	Maurice	Barbier	2016-04-03 10:39:17	1956-11-06 17:38:28	
+e8e93fd2-5a62-11eb-bc37-0242c0a8e002	ec248c83-5a62-11eb-bc37-0242c0a8e002	paulette.boyer@example.org	$argon2id$v=19$m=65536,t=4,p=1$xh6Uaa9XCEu1PFhYy5h...	Jeannine	Barbier	2016-08-14 06:03:49	1954-12-19 23:48:46	
+d91ce08a-5a62-11eb-bc37-0242c0a8e002	ebec7939-5a62-11eb-bc37-0242c0a8e002	mcarlier@example.net	$argon2id$v=19$m=65536,t=4,p=1$hx2EKRpKBMQzOcq2A7n...	Sébastien	Barre	2018-04-25 18:40:04	1931-04-19 05:07:02	
+dfb349ea-5a62-11eb-bc37-0242c0a8e002	ebfdaead-5a62-11eb-bc37-0242c0a8e002	wleblanc@example.net	$argon2id$v=19$m=65536,t=4,p=1$YGreUTpRX/bS6LYJMEe...	Charlotte	Barre	2016-04-24 18:43:46	1959-09-27 17:57:30	
+e0e32aac-5a62-11eb-bc37-0242c0a8e002	ec02cd68-5a62-11eb-bc37-0242c0a8e002	benjamin88@example.net	$argon2id$v=19$m=65536,t=4,p=1$lF4Fi+R/rFTqW2DDNdC...	Émile	Barre	2014-09-19 00:44:44	1979-04-25 09:09:23	
+d372e1a4-5a62-11eb-bc37-0242c0a8e002	ebd73f7a-5a62-11eb-bc37-0242c0a8e002	desousa.daniel@example.net	$argon2id$v=19$m=65536,t=4,p=1$4WqW6qvuzmtHE4Hky+p...	Jules	Baudry	2015-06-29 16:12:37	1936-11-30 14:27:25	
+e3c5ae24-5a62-11eb-bc37-0242c0a8e002	ec0ff023-5a62-11eb-bc37-0242c0a8e002	lucy17@example.com	$argon2id$v=19$m=65536,t=4,p=1$0JTIFPfxC8BkuYYuwiL...	François	Bazin	2020-09-20 13:17:34	1960-01-21 18:45:13	
+d0fea219-5a62-11eb-bc37-0242c0a8e002	ebca6c9c-5a62-11eb-bc37-0242c0a8e002	bernadette61@example.org	$argon2id$v=19$m=65536,t=4,p=1$41oEvzvRYCgHUtGkfvf...	Suzanne	Begue	2015-07-22 23:57:20	1980-01-06 05:35:53	
+d972205c-5a62-11eb-bc37-0242c0a8e002	ebed737a-5a62-11eb-bc37-0242c0a8e002	nathalie16@example.net	$argon2id$v=19$m=65536,t=4,p=1$EA+tAj/T91Oiw24YRmd...	Margot	Begue	2015-01-03 11:34:36	1963-03-31 00:40:54	
+dabbf8c5-5a62-11eb-bc37-0242c0a8e002	ebf1eb35-5a62-11eb-bc37-0242c0a8e002	ihamon@example.net	$argon2id$v=19$m=65536,t=4,p=1$5aXF21THodzlqPSr0f2...	Élodie	Begue	2019-12-23 09:41:18	1971-10-12 07:50:22	
+d67f96c0-5a62-11eb-bc37-0242c0a8e002	ebe48641-5a62-11eb-bc37-0242c0a8e002	yves.maurice@example.org	$argon2id$v=19$m=65536,t=4,p=1$YFMXW19bbtJ5D800Hi9...	Margot	Benard	2017-04-19 16:31:10	1975-07-15 07:05:53	
+d6bd559f-5a62-11eb-bc37-0242c0a8e002	ebe52f8c-5a62-11eb-bc37-0242c0a8e002	jean25@example.net	$argon2id$v=19$m=65536,t=4,p=1$7H8NV+qIqeWz1h5vpKD...	Jacques	Bernier	2017-07-08 05:02:18	1939-10-06 01:10:22	
+d9d45f9f-5a62-11eb-bc37-0242c0a8e002	ebef41cb-5a62-11eb-bc37-0242c0a8e002	michel.richard@example.org	$argon2id$v=19$m=65536,t=4,p=1$t9ymKXSp9iDpfmCTSEg...	Franck	Bernier	2011-02-08 14:51:10	1995-09-30 22:26:56	
+cfe8aa6a-5a62-11eb-bc37-0242c0a8e002	ebc571ba-5a62-11eb-bc37-0242c0a8e002	anne.lefort@example.net	$argon2id$v=19$m=65536,t=4,p=1$A04dIXVKXBm/1UFVwlm...	Patricia	Berthelot	2017-10-25 04:59:27	1937-02-07 18:36:14	
+d2fe3a81-5a62-11eb-bc37-0242c0a8e002	ebd543f6-5a62-11eb-bc37-0242c0a8e002	audrey62@example.net	$argon2id$v=19$m=65536,t=4,p=1$VbXhu0uZq/kdFOXAyWj...	Augustin	Berthelot	2018-04-20 21:28:46	1961-04-19 23:14:03	
+d58098ed-5a62-11eb-bc37-0242c0a8e002	ebe193f6-5a62-11eb-bc37-0242c0a8e002	colette.girard@example.org	$argon2id$v=19$m=65536,t=4,p=1$AZW0qny+M92Uo0DHhkf...	Lucie	Berthelot	2016-11-05 18:15:17	2000-07-28 08:20:34	
+d7405d71-5a62-11eb-bc37-0242c0a8e002	ebe66daa-5a62-11eb-bc37-0242c0a8e002	wguillaume@example.net	$argon2id$v=19$m=65536,t=4,p=1$7mcnaqTiE4xjujo4/P6...	Dominique	Berthelot	2014-07-08 16:06:36	1951-10-26 08:42:27	
+e6849a6e-5a62-11eb-bc37-0242c0a8e002	ec1bf40b-5a62-11eb-bc37-0242c0a8e002	diane.boulanger@example.org	$argon2id$v=19$m=65536,t=4,p=1$/0mDeT4iKYWn3emH52r...	Manon	Besnard	2015-09-25 11:28:50	1974-01-03 22:39:41	
+dca570d6-5a62-11eb-bc37-0242c0a8e002	ebf58304-5a62-11eb-bc37-0242c0a8e002	agnes.dias@example.net	$argon2id$v=19$m=65536,t=4,p=1$NGnD7LHavSMSNDBPclt...	Christophe	Blin	2019-05-08 18:52:01	1954-12-20 15:25:13	
+
+
+---------------- ETAPE 3 ------------------
+
+SELECT * FROM users ORDER BY registration_date DESC LIMIT 1
+
+
+d335aabf-5a62-11eb-bc37-0242c0a8e002	ebd654da-5a62-11eb-bc37-0242c0a8e002	tanguy.nathalie@example.org	$argon2id$v=19$m=65536,t=4,p=1$vRo7rgRPstWDTW4fOe4...	Julie	Jacob	2020-12-25 10:19:31	1946-12-24 04:25:33	
+
+
+---------------- ETAPE 4 ------------------
+
+SELECT * FROM users WHERE MONTH(birthdate) = 2
+
+
+id	address_id	email	password	first_name	last_name	registration_date	birthdate	
+cef1287b-5a62-11eb-bc37-0242c0a8e002	ebc1a2f2-5a62-11eb-bc37-0242c0a8e002	wmarechal@example.com	$argon2id$v=19$m=65536,t=4,p=1$jcwgPAYNq7fHe5BDSy0...	Véronique	Denis	2020-12-01 19:05:04	1934-02-16 11:14:13	
+cfe8aa6a-5a62-11eb-bc37-0242c0a8e002	ebc571ba-5a62-11eb-bc37-0242c0a8e002	anne.lefort@example.net	$argon2id$v=19$m=65536,t=4,p=1$A04dIXVKXBm/1UFVwlm...	Patricia	Berthelot	2017-10-25 04:59:27	1937-02-07 18:36:14	
+d038de58-5a62-11eb-bc37-0242c0a8e002	ebc79a39-5a62-11eb-bc37-0242c0a8e002	garcia.thierry@example.net	$argon2id$v=19$m=65536,t=4,p=1$3RK6e2Q8g2a3vM3FI8d...	Marine	Lemaire	2014-01-30 18:20:15	1999-02-14 03:59:15	
+d08be4c2-5a62-11eb-bc37-0242c0a8e002	ebc90358-5a62-11eb-bc37-0242c0a8e002	xmerle@example.org	$argon2id$v=19$m=65536,t=4,p=1$xxNYT+j7JnF1irk1jEy...	Marine	Gaillard	2020-09-22 13:02:11	1994-02-26 00:48:07	
+d16b1734-5a62-11eb-bc37-0242c0a8e002	ebcb9ef8-5a62-11eb-bc37-0242c0a8e002	mschneider@example.net	$argon2id$v=19$m=65536,t=4,p=1$On1L1pGhkzKbXdkpjqW...	Capucine	Andre	2011-09-08 10:42:55	1961-02-03 21:20:38	
+d5132e92-5a62-11eb-bc37-0242c0a8e002	ebdf2ab1-5a62-11eb-bc37-0242c0a8e002	audrey.humbert@example.org	$argon2id$v=19$m=65536,t=4,p=1$ESeYXJ8HNMcsOUQ6WH4...	Sylvie	Godard	2012-10-12 05:51:55	1958-02-15 10:07:15	
+d990a01a-5a62-11eb-bc37-0242c0a8e002	ebedc004-5a62-11eb-bc37-0242c0a8e002	camille.becker@example.org	$argon2id$v=19$m=65536,t=4,p=1$htr0dF4ootQmTEIeqWS...	Jean	Rolland	2013-06-07 08:01:10	1935-02-20 20:25:48	
+da909dec-5a62-11eb-bc37-0242c0a8e002	ebf19ca7-5a62-11eb-bc37-0242c0a8e002	margaux.chauvin@example.com	$argon2id$v=19$m=65536,t=4,p=1$IUyB7BjXNLnBX8xwF19...	Antoine	Hubert	2012-03-27 11:40:34	1967-02-22 10:43:56	
+e966f982-5a62-11eb-bc37-0242c0a8e002	ec2741a9-5a62-11eb-bc37-0242c0a8e002	lejeune.margot@example.com	$argon2id$v=19$m=65536,t=4,p=1$IdedfeU46WVO0fUDL2v...	David	Mathieu	2019-11-10 19:26:35	1962-02-12 06:12:21	
+e9b76380-5a62-11eb-bc37-0242c0a8e002	ec27e31f-5a62-11eb-bc37-0242c0a8e002	lebrun.nath@example.com	$argon2id$v=19$m=65536,t=4,p=1$ucX4zi5fSOxIi3HRH2U...	Franck	Marchand	2014-11-28 14:49:16	1969-02-22 02:04:51	
+
+
+---------------- ETAPE 5 ------------------
+
+SELECT COUNT(*) FROM users
+
+221	
+
+---------------- ETAPE 6 ------------------
+
+SELECT users.first_name, users.last_name, addresses.city
+FROM users
+JOIN addresses ON users.id = addresses.user_id
+
+
+first_name	last_name	city	
+Caroline	Levy	Bonneau	
+Charles	Laporte	Diaz-sur-Mer	
+Renée	Pascal	Torres	
+Christine	Jourdan	Chartier	
+Alix	Gilles	Gomez-sur-Lebon	
+Henri	Garcia	Gilles-sur-Martin	
+Michelle	Monnier	Herve	
+Geneviève	Dos Santos	DiazVille	
+Thibaut	Delattre	Maurice-la-Forêt	
+Christelle	Joly	Lacombe-sur-Rousset	
+Arthur	Albert	Millet	
+Valérie	Pottier	MoreauBourg	
+Laurent	Leroux	Bonneau	
+Yves	Fernandes	Traore-les-Bains	
+Anne	Descamps	Mendes-sur-Martins	
+Véronique	Denis	Barthelemy	
+Christelle	Fernandes	Voisinboeuf	
+Matthieu	Louis	Regnier	
+Clémence	Lemaitre	Gautier	
+Dominique	Chevallier	Lelievre	
+Joseph	Roussel	Delaunay	
+Margot	Mary	Adam	
+Patricia	Berthelot	GuilletBourg	
+Anne	Le Goff	Godard-sur-Jacques	
+Marine	Lemaire	Barthelemy-sur-Ruiz	
+
+---------------- ETAPE 7 ------------------
+
+SELECT *
+FROM users
+JOIN addresses ON users.address_id = addresses.id
+WHERE addresses.number IS NULL
+
+
+id	address_id	email	password	first_name	last_name	registration_date	birthdate	id	user_id	street	number	complements	postal_code	city	
+cd5272cb-5a62-11eb-bc37-0242c0a8e002	eb316afe-5a62-11eb-bc37-0242c0a8e002	xgoncalves@example.org	$argon2id$v=19$m=65536,t=4,p=1$l3lmgk7pqNnR8o1W3xl...	Caroline	Levy	2016-01-06 19:56:14	1944-08-14 04:43:38	eb316afe-5a62-11eb-bc37-0242c0a8e002	cd5272cb-5a62-11eb-bc37-0242c0a8e002	impasse Benjamin Bonneau	
+    NULL
+	
+    NULL
+	51 601	Bonneau	
+cda719ee-5a62-11eb-bc37-0242c0a8e002	eb331e14-5a62-11eb-bc37-0242c0a8e002	lucas.lejeune@example.com	$argon2id$v=19$m=65536,t=4,p=1$29OcwmicYQiB/0T5rPT...	Christine	Jourdan	2016-04-21 17:07:08	1987-03-31 05:24:35	eb331e14-5a62-11eb-bc37-0242c0a8e002	cda719ee-5a62-11eb-bc37-0242c0a8e002	boulevard Madeleine Perret	
+    NULL
+	
+    NULL
+	94 783	Chartier	
+cddc9fa2-5a62-11eb-bc37-0242c0a8e002	eb3445c3-5a62-11eb-bc37-0242c0a8e002	zmarques@example.com	$argon2id$v=19$m=65536,t=4,p=1$yDNm+YH1P91EJY7MJga...	Henri	Garcia	2019-09-26 16:33:44	1973-05-12 00:40:48	eb3445c3-5a62-11eb-bc37-0242c0a8e002	cddc9fa2-5a62-11eb-bc37-0242c0a8e002	rue Laurent Schneider	
+    NULL
+	
+    NULL
+	33683	Gilles-sur-Martin	
+ce120f9b-5a62-11eb-bc37-0242c0a8e002	eb3502cc-5a62-11eb-bc37-0242c0a8e002	capucine98@example.org	$argon2id$v=19$m=65536,t=4,p=1$2XEdiRMYUubMjv0Dyb9...	Geneviève	Dos Santos	2016-12-14 20:34:32	1953-12-02 10:08:37	eb3502cc-5a62-11eb-bc37-0242c0a8e002	ce120f9b-5a62-11eb-bc37-0242c0a8e002	avenue Vallee	
+    NULL
+	
+    NULL
+	48095	DiazVille	
+ce637c47-5a62-11eb-bc37-0242c0a8e002	ebbdd3f5-5a62-11eb-bc37-0242c0a8e002	guillaume.berger@example.net	$argon2id$v=19$m=65536,t=4,p=1$fLsSUhcqHfqmzd2+8Qt...	Arthur	Albert	2020-02-22 17:36:37	1958-06-03 22:26:54	ebbdd3f5-5a62-11eb-bc37-0242c0a8e002	ce637c47-5a62-11eb-bc37-0242c0a8e002	rue Isabelle Lebrun	
+    NULL
+	
+    NULL
+	82041	Millet	
+cfc0c883-5a62-11eb-bc37-0242c0a8e002	ebc4e459-5a62-11eb-bc37-0242c0a8e002	maurice.christine@example.net	$argon2id$v=19$m=65536,t=4,p=1$rryFhugpn6Nf8P3juBX...	Margot	Mary	2011-12-26 20:58:11	1936-06-22 22:40:21	ebc4e459-5a62-11eb-bc37-0242c0a8e002	cfc0c883-5a62-11eb-bc37-0242c0a8e002	rue de Hamon	
+    NULL
+	
+    NULL
+	66811	Adam	
+d010f8ef-5a62-11eb-bc37-0242c0a8e002	ebc7303b-5a62-11eb-bc37-0242c0a8e002	uboyer@example.org	$argon2id$v=19$m=65536,t=4,p=1$0ERX4uCzOugQ1gq4Iv0...	Anne	Le Goff	2012-01-22 22:37:17	1977-05-30 22:09:11	ebc7303b-5a62-11eb-bc37-0242c0a8e002	d010f8ef-5a62-11eb-bc37-0242c0a8e002	chemin Laurent Humbert	
+    NULL
+	Elle restait seule dans la rue, bouclait ses épero...	00652	Godard-sur-Jacques	
+d065f200-5a62-11eb-bc37-0242c0a8e002	ebc8ae92-5a62-11eb-bc37-0242c0a8e002	langlois.ines@example.org	$argon2id$v=19$m=65536,t=4,p=1$4wDdVKjZZCUI8uAiclB...	Adrien	Blot	2014-06-28 16:56:02	1969-01-13 19:12:39	ebc8ae92-5a62-11eb-bc37-0242c0a8e002	d065f200-5a62-11eb-bc37-0242c0a8e002	place Audrey Lesage	
+    NULL
+	Ce serait pour un homme sortit du tonneau, comme c...	03 863	Hebert-sur-Aubry	
+d0fea219-5a62-11eb-bc37-0242c0a8e002	ebca6c9c-5a62-11eb-bc37-0242c0a8e002	bernadette61@example.org	$argon2id$v=19$m=65536,t=4,p=1$41oEvzvRYCgHUtGkfvf...	Suzanne	Begue	2015-07-22 23:57:20	1980-01-06 05:35:53	ebca6c9c-5a62-11eb-bc37-0242c0a8e002	d0fea219-5a62-11eb-bc37-0242c0a8e002	boulevard Lefort	
+    NULL
+	
+    NULL
+	00638	Germain	
+d23194e1-5a62-11eb-bc37-0242c0a8e002	ebd00432-5a62-11eb-bc37-0242c0a8e002	marie.leon@example.org	$argon2id$v=19$m=65536,t=4,p=1$OoBqNWoNbqrYuDGmuLI...	Édouard	Rousseau	2018-08-06 14:34:05	1936-06-09 16:45:56	ebd00432-5a62-11eb-bc37-0242c0a8e002	d23194e1-5a62-11eb-bc37-0242c0a8e002	place Valérie Lesage	
+    NULL
+	
+    NULL
+	30282	Bernard	
+d26a1232-5a62-11eb-bc37-0242c0a8e002	ebd0f848-5a62-11eb-bc37-0242c0a8e002	pierre.dupre@example.org	$argon2id$v=19$m=65536,t=4,p=1$uIxQT46Q363XPyOq4zN...	Margot	Guibert	2012-08-15 04:02:36	1984-06-09 17:47:50	ebd0f848-5a62-11eb-bc37-0242c0a8e002	d26a1232-5a62-11eb-bc37-0242c0a8e002	rue Wagner	
+    NULL
+	
+    NULL
+	39167	Arnaud-sur-Mer	
+d2e19934-5a62-11eb-bc37-0242c0a8e002	ebd3bab8-5a62-11eb-bc37-0242c0a8e002	andre.legall@example.org	$argon2id$v=19$m=65536,t=4,p=1$fSPewJAx6fLdKCcM/XJ...	Andrée	Aubert	2016-08-26 11:35:26	1937-03-21 01:53:03	ebd3bab8-5a62-11eb-bc37-0242c0a8e002	d2e19934-5a62-11eb-bc37-0242c0a8e002	place Denis Pruvost	
+    NULL
+	
+    NULL
+	72844	Laporte	
+d549d0d2-5a62-11eb-bc37-0242c0a8e002	ebe003d5-5a62-11eb-bc37-0242c0a8e002	helene.reynaud@example.com	$argon2id$v=19$m=65536,t=4,p=1$2SZxi+VgtEOydYjfvj4...	Bertrand	Sanchez	2011-09-12 01:33:33	1972-09-04 22:39:52	ebe003d5-5a62-11eb-bc37-0242c0a8e002	d549d0d2-5a62-11eb-bc37-0242c0a8e002	boulevard de Thomas	
+    NULL
+	
+    NULL
+	98 155	Legendre	
+d59bd778-5a62-11eb-bc37-0242c0a8e002	ebe1e359-5a62-11eb-bc37-0242c0a8e002	gerard88@example.org	$argon2id$v=19$m=65536,t=4,p=1$nMQPfjAKV+7F4pXZGLL...	Étienne	Marques	2011-01-30 12:23:47	1956-11-27 13:12:04	ebe1e359-5a62-11eb-bc37-0242c0a8e002	d59bd778-5a62-11eb-bc37-0242c0a8e002	rue Christiane Courtois	
+    NULL
+	
+    NULL
+	24242	Gonzalez	
+d5f42b61-5a62-11eb-bc37-0242c0a8e002	ebe2daa6-5a62-11eb-bc37-0242c0a8e002	grenier.eleonore@example.net	$argon2id$v=19$m=65536,t=4,p=1$FPX+Ee3khvQ1rhUpQd3...	Sébastien	Bourgeois	2018-02-28 21:54:47	1954-10-10 10:42:34	ebe2daa6-5a62-11eb-bc37-0242c0a8e002	d5f42b61-5a62-11eb-bc37-0242c0a8e002	rue Valérie Blanchet	
+    NULL
+	
+    NULL
+	62 237	Blanchet	
+d661be9f-5a62-11eb-bc37-0242c0a8e002	ebe43963-5a62-11eb-bc37-0242c0a8e002	olivie15@example.org	$argon2id$v=19$m=65536,t=4,p=1$Yxaoth5BfI0RZnhQc9A...	Rémy	Letellier	2020-11-13 21:51:45	1932-09-27 17:14:16	ebe43963-5a62-11eb-bc37-0242c0a8e002	d661be9f-5a62-11eb-bc37-0242c0a8e002	boulevard Weber	
+    NULL
+	
+    NULL
+	43 740	Mahe-sur-Brunet	
+d6bd559f-5a62-11eb-bc37-0242c0a8e002	ebe52f8c-5a62-11eb-bc37-0242c0a8e002	jean25@example.net	$argon2id$v=19$m=65536,t=4,p=1$7H8NV+qIqeWz1h5vpKD...	Jacques	Bernier	2017-07-08 05:02:18	1939-10-06 01:10:22	ebe52f8c-5a62-11eb-bc37-0242c0a8e002	d6bd559f-5a62-11eb-bc37-0242c0a8e002	place de Leleu	
+    NULL
+	
+    NULL
+	01 147	Durand	
+d71d14ef-5a62-11eb-bc37-0242c0a8e002	ebe61afa-5a62-11eb-bc37-0242c0a8e002	capucine.petit@example.com	$argon2id$v=19$m=65536,t=4,p=1$me1A6Hr38TiRse+KmFr...	Mathilde	Collin	2020-07-16 11:51:12	1940-09-16 15:19:30	ebe61afa-5a62-11eb-bc37-0242c0a8e002	d71d14ef-5a62-11eb-bc37-0242c0a8e002	place Auguste Deschamps	
+    NULL
+	
+    NULL
+	55591	Bouvetboeuf	
+d79deeec-5a62-11eb-bc37-0242c0a8e002	ebe81bba-5a62-11eb-bc37-0242c0a8e002	penelope.charpentier@example.org	$argon2id$v=19$m=65536,t=4,p=1$Ird2ZTd7SWqM2aYlgJQ...	Manon	Maurice	2015-10-13 05:44:43	2000-06-24 11:13:02	ebe81bba-5a62-11eb-bc37-0242c0a8e002	d79deeec-5a62-11eb-bc37-0242c0a8e002	rue Zacharie Jacquet	
+    NULL
+	Mais, avec cet allongement de perspective que le p...	75288	Buisson	
+d8ff0f4d-5a62-11eb-bc37-0242c0a8e002	ebec2dd4-5a62-11eb-bc37-0242c0a8e002	aubry.stephane@example.org	$argon2id$v=19$m=65536,t=4,p=1$SMALYiHKpzveIshqiHq...	Tristan	Gaudin	2015-04-21 04:52:12	1955-11-13 22:07:41	ebec2dd4-5a62-11eb-bc37-0242c0a8e002	d8ff0f4d-5a62-11eb-bc37-0242c0a8e002	chemin Denis Ramos	
+    NULL
+	Ah! se dit-elle, il porte un couteau dans sa vie, ...	10 470	Mathieu	
+d91ce08a-5a62-11eb-bc37-0242c0a8e002	ebec7939-5a62-11eb-bc37-0242c0a8e002	mcarlier@example.net	$argon2id$v=19$m=65536,t=4,p=1$hx2EKRpKBMQzOcq2A7n...	Sébastien	Barre	2018-04-25 18:40:04	1931-04-19 05:07:02	ebec7939-5a62-11eb-bc37-0242c0a8e002	d91ce08a-5a62-11eb-bc37-0242c0a8e002	rue Dijoux	
+    NULL
+	
+    NULL
+	70658	Vasseur	
+d937abfb-5a62-11eb-bc37-0242c0a8e002	ebecd1cc-5a62-11eb-bc37-0242c0a8e002	auguste.poulain@example.com	$argon2id$v=19$m=65536,t=4,p=1$FSyStnjT6msvVMLhiQm...	Thibaut	Rousset	2012-04-12 16:56:24	1959-06-13 21:50:21	ebecd1cc-5a62-11eb-bc37-0242c0a8e002	d937abfb-5a62-11eb-bc37-0242c0a8e002	impasse Blanchard	
+    NULL
+	
+    NULL
+	28883	Fischernec	
+d9f18c89-5a62-11eb-bc37-0242c0a8e002	ebef9434-5a62-11eb-bc37-0242c0a8e002	guillot.benoit@example.com	$argon2id$v=19$m=65536,t=4,p=1$ctGfvgePS2LgPe+KbaY...	Louis	Monnier	2015-04-30 20:02:38	1952-08-23 11:19:36	ebef9434-5a62-11eb-bc37-0242c0a8e002	d9f18c89-5a62-11eb-bc37-0242c0a8e002	rue Devaux	
+    NULL
+	
+    NULL
+	54 502	Jourdan	
+dabbf8c5-5a62-11eb-bc37-0242c0a8e002	ebf1eb35-5a62-11eb-bc37-0242c0a8e002	ihamon@example.net	$argon2id$v=19$m=65536,t=4,p=1$5aXF21THodzlqPSr0f2...	Élodie	Begue	2019-12-23 09:41:18	1971-10-12 07:50:22	ebf1eb35-5a62-11eb-bc37-0242c0a8e002	dabbf8c5-5a62-11eb-bc37-0242c0a8e002	boulevard Arnaude Schneider	
+    NULL
+	
+    NULL
+	71 868	Humbert	
+db4a9945-5a62-11eb-bc37-0242c0a8e002	ebf2d6e5-5a62-11eb-bc37-0242c0a8e002	xlecomte@example.net	$argon2id$v=19$m=65536,t=4,p=1$atByLXSeBvs0Tvkc4ou...	Pénélope	Marques	2013-01-25 15:21:28	1966-03-23 19:57:31	ebf2d6e5-5a62-11eb-bc37-0242c0a8e002	db4a9945-5a62-11eb-bc37-0242c0a8e002	avenue Patrick Lemaitre	
+    NULL
+	
+    NULL
+	02 133	Lopes	
+
+
+---------------- ETAPE 8 ------------------
+
+SELECT name, price
+FROM products
+WHERE price > 1000
+
+
+name	price	
+LightPink	7925.59	
+Salmon	5383.56	
+MediumSpringGreen	1531.09	
+Aquamarine	8970.05	
+Aqua	3201.16	
+DarkTurquoise	8459.04	
+Indigo 	2624.95	
+LightGoldenRodYellow	3754.79	
+SandyBrown	6767.83	
+DarkOliveGreen	3497.05	
+RosyBrown	8741.74	
+GreenYellow	9320.31	
+Thistle	3620.65	
+PaleTurquoise	3884.33	
+Turquoise	6293.51	
+RosyBrown	3400.2	
+SandyBrown	3145.36	
+MediumOrchid	3585.92	
+PaleGreen	8115.16	
+SeaShell	4850.85	
+DarkSalmon	4899.68	
+Olive	2527.99	
+MintCream	8656.92	
+OldLace	2856.98	
+Red	8515.07	
+
+
+
+
+---------------- ETAPE 9 ------------------
+
+
+SELECT products.name AS product_name, pictures.url AS picture_url
+FROM products JOIN pictures 
+ON products.id = pictures.product_id
+
+
+product_name	picture_url	
+LightPink	http://lorempixel.com/640/480/?20688	
+Salmon	http://lorempixel.com/640/480/?61726	
+Salmon	http://lorempixel.com/640/480/?38510	
+Salmon	http://lorempixel.com/640/480/?88439	
+MediumSpringGreen	http://lorempixel.com/640/480/?72613	
+MediumSpringGreen	http://lorempixel.com/640/480/?26429	
+MediumSpringGreen	http://lorempixel.com/640/480/?43580	
+MediumSpringGreen	http://lorempixel.com/640/480/?63797	
+Aquamarine	http://lorempixel.com/640/480/?34731	
+Aquamarine	http://lorempixel.com/640/480/?26308	
+DarkBlue	http://lorempixel.com/640/480/?90266	
+DarkBlue	http://lorempixel.com/640/480/?36101	
+DarkBlue	http://lorempixel.com/640/480/?79086	
+Aqua	http://lorempixel.com/640/480/?79590	
+Aqua	http://lorempixel.com/640/480/?70496	
+DarkTurquoise	http://lorempixel.com/640/480/?78192	
+DarkTurquoise	http://lorempixel.com/640/480/?94418	
+DarkTurquoise	http://lorempixel.com/640/480/?94917	
+DarkTurquoise	http://lorempixel.com/640/480/?29544	
+Indigo 	http://lorempixel.com/640/480/?80746	
+Indigo 	http://lorempixel.com/640/480/?84888	
+LightGoldenRodYellow	http://lorempixel.com/640/480/?36295	
+LightGoldenRodYellow	http://lorempixel.com/640/480/?76760	
+LightGoldenRodYellow	http://lorempixel.com/640/480/?17135	
+LightGoldenRodYellow	http://lorempixel.com/640/480/?45121	
+
+
+---------------- ETAPE 10------------------
+
+SELECT products.name
+FROM products
+JOIN products_categories ON products.id = products_categories.product_id
+JOIN categories ON categories.id = products_categories.category_id
+WHERE categories.title = 'Voyage'
+
+
+name	
+LemonChiffon	
+DarkSalmon	
+DodgerBlue	
+Salmon	
+GreenYellow	
+CadetBlue	
+MediumSpringGreen	
+Salmon	
+White	
+Beige	
+LawnGreen	
+DeepSkyBlue	
+HotPink	
+Thistle	
+Chartreuse	
+LightGray	
+DarkOrchid	
+LightCyan	
+PaleVioletRed	
+PapayaWhip	
+ForestGreen	
+LightYellow	
+BlanchedAlmond	
+WhiteSmoke	
+Aqua	
+
+
+---------------- ETAPE 11 ------------------
+
+
+SELECT users.first_name, users.last_name, COUNT(orders.id) AS total_orders
+FROM users
+JOIN orders ON users.id = orders.user_id
+GROUP BY users.id
+HAVING total_orders > 10
+
+
+first_name	last_name	total_orders	
+Charles	Laporte	11	
+Renée	Pascal	15	
+Alix	Gilles	17	
+Henri	Garcia	16	
+Michelle	Monnier	16	
+Thibaut	Delattre	14	
+Arthur	Albert	18	
+Laurent	Leroux	12	
+Véronique	Denis	12	
+Christelle	Fernandes	12	
+Matthieu	Louis	16	
+Clémence	Lemaitre	18	
+Dominique	Chevallier	14	
+Margot	Mary	16	
+Patricia	Berthelot	13	
+Adrien	Blot	15	
+Marine	Gaillard	13	
+Geneviève	Marty	11	
+Suzanne	Begue	17	
+Emmanuel	Regnier	20	
+Suzanne	Prevost	19	
+Capucine	Andre	15	
+Clémence	Nicolas	11	
+Astrid	Hubert	17	
+Margot	Guibert	13	
+
+
+---------------- ETAPE 12 ------------------
+
+SELECT DISTINCT products.*
+FROM products
+JOIN products_orders ON products.id = products_orders.product_id
+JOIN orders ON products_orders.order_id = orders.id
+WHERE orders.user_id = (
+    SELECT id FROM users ORDER BY registration_date ASC LIMIT 1
+)
+
+
+id	name	description	price	
+ee426ddd-5a62-11eb-bc37-0242c0a8e002	PaleGoldenRod	Berthe une jeune femme tout irritée. Sa figure gra...	5282.65	
+eea4135f-5a62-11eb-bc37-0242c0a8e002	Khaki	Madame Homais en se reculant. Et Emma quotidiennem...	3644.72	
+ee020269-5a62-11eb-bc37-0242c0a8e002	Gold	Charles tisonnait avec placidité, les deux rangées...	3133.9	
+ee4cc916-5a62-11eb-bc37-0242c0a8e002	PapayaWhip	Aucune fortune ne tient plus, madame Lefrançois; j...	5246.46	
+ef138047-5a62-11eb-bc37-0242c0a8e002	RosyBrown	M. Homais; lui! des moyens? Dans sa partie, c'est ...	2145.49	
+ee9120ea-5a62-11eb-bc37-0242c0a8e002	SpringGreen	Emma de lire des vers; Léon les déclamait d'une vo...	199.66	
+eeab7fef-5a62-11eb-bc37-0242c0a8e002	LightGoldenRodYellow	Personne au monde n'était beau comme sa levrette, ...	1276.41	
+ef4e452b-5a62-11eb-bc37-0242c0a8e002	LightGray	Non, pas de surprise; il se prenait d'une rage far...	1324.56	
+edb464cf-5a62-11eb-bc37-0242c0a8e002	DodgerBlue	Mais, le ressort du coté droit s'étant à la clarté...	2634.52	
+ee623f08-5a62-11eb-bc37-0242c0a8e002	DarkGreen	Jusqu'au soir, on mangea. Quand on est simple spec...	2039.44	
+ef398a8c-5a62-11eb-bc37-0242c0a8e002	Peru	Rodolphe, à cette invention du couvre-pied: -- Pou...	8378.37	
+ed62cbfa-5a62-11eb-bc37-0242c0a8e002	Salmon	Mais non! la campagne de France, et même j'en ai p...	9543.97	
+ef5b6fec-5a62-11eb-bc37-0242c0a8e002	DimGrey	Lisez les Lettres de quelques marches descendant à...	4584.63	
+edb6b2a2-5a62-11eb-bc37-0242c0a8e002	MistyRose	Emma goûtait cet amour d'une façon si exclusive. C...	3204.83	
+ef205650-5a62-11eb-bc37-0242c0a8e002	SteelBlue	Quelquefois aussi, elle lui découpait des cartons,...	870.14	
+ed840ad3-5a62-11eb-bc37-0242c0a8e002	Lime	Tuvache, à côté de la terre du sentier, les parole...	4796.98	
+ee3352f8-5a62-11eb-bc37-0242c0a8e002	Orchid	Bovary père, brisant une chaise à dossier long; et...	6744.67	
+eedba2c2-5a62-11eb-bc37-0242c0a8e002	Magenta	Bovary, prenait son châle, et, vingt pas plus que ...	8019.94	
+ef5e68b9-5a62-11eb-bc37-0242c0a8e002	DarkSeaGreen	Annette! n'oublie pas les civilités qui lui serrai...	3022.89	
+ed9c8b08-5a62-11eb-bc37-0242c0a8e002	LightCoral	Emma voulut sortir; la foule par un signe de tête,...	505.68	
+ee0d2018-5a62-11eb-bc37-0242c0a8e002	Silver	Mais une rafale de vent emportait les roulades que...	1861.76	
+ef0aefcf-5a62-11eb-bc37-0242c0a8e002	CornflowerBlue	France ou à l'année, selon le souffle tiède de ses...	9019.13	
+ee5d91d7-5a62-11eb-bc37-0242c0a8e002	DarkMagenta	Elle demanda lesquelles, car Charles avait la tête...	1741.46	
+eef4d791-5a62-11eb-bc37-0242c0a8e002	LightSteelBlue	Ce n'est pas que de choses historiques, rêva bahut...	888.74	
+ef8cfd2c-5a62-11eb-bc37-0242c0a8e002	MidnightBlue	À demain, donc! dit Emma d'une voix tranquille: vo...	290.09	
