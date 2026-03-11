@@ -1,0 +1,19 @@
+<main id="blog">
+    <ul>
+        <?php foreach ($articles as $id => $article): ?>
+        <li>
+            <article>
+                <header>
+                    <h2><?= htmlspecialchars($article['titre']) ?></h2>
+                </header>
+                <section>
+                    <p><?= substr(htmlspecialchars($article['resume']), 0, 150) ?>...</p>
+                </section>
+                <footer>
+                    <a href="?route=article&id=<?= $id ?>">Lire l'article complet</a>
+                </footer>
+            </article>
+        </li>
+        <?php endforeach; ?>
+    </ul>
+</main>

@@ -1,0 +1,11 @@
+<main id="article">
+    <header>
+        <h2><?= htmlspecialchars($article['titre']) ?></h2>
+    </header>
+    <section>
+        <?= $article['contenu'] ?> 
+    </section>
+    <footer>
+        <a href="?route=">← Retour à la liste des articles</a>
+    </footer>
+</main>
